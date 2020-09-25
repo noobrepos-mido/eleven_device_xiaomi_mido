@@ -2,7 +2,7 @@
 # system.prop for mido
 #
 # Audio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 af.fast_track_multiplier=2 \
 audio.deep_buffer.media=true \
 audio.offload.disable=true \
@@ -40,13 +40,13 @@ vendor.voice.voip.conc.disabled=true \
 sys.display-size=1920x1080
 
 # Bluetooth
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 bluetooth.hfp.client=1 \
 vendor.qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 camera.display.lmax=1280x720 \
 camera.display.umax=1920x1080 \
 camera.lowpower.record.enable=1 \
@@ -58,15 +58,15 @@ persist.vendor.qti.telephony.vt_cam_interface=1 \
 vidc.enc.dcvs.extra-buff-count=2
 
 # Cne
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.cne.feature=1
 
 # Coresight
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.debug.coresight.config=stm-events
 
 # Display
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
@@ -90,28 +90,28 @@ vendor.display.disable_skip_validate=1 \
 vendor.gralloc.enable_fb_ubwc=1
 
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.dpm.feature=0
 
 # DRM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 drm.service.enabled=true
 
 # Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.qfp=false
 
 # Fm
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.fm.transmitter=false \
 vendor.hw.fm.init=0
 
 # Frp
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Media
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 av.debug.disable.pers.cache=1 \
 debug.stagefright.omx_default_rank.sw-audio=1 \
 debug.stagefright.omx_default_rank=0 \
@@ -129,18 +129,18 @@ vendor.vidc.enc.disable_bframes=1 \
 vendor.video.disable.ubwc=1
 
 # Perf
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.extension_library=libqti-perfd-client.so \
 ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Netmgrd
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.use_data_netmgrd=true \
 persist.data.netmgrd.qos.enable=true \
 persist.vendor.data.mode=concurrent
 
 # Nitz
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.radio.nitz_plmn="" \
 persist.vendor.radio.nitz_lons_0="" \
 persist.vendor.radio.nitz_lons_1="" \
@@ -152,12 +152,12 @@ persist.vendor.radio.nitz_sons_2="" \
 persist.vendor.radio.nitz_sons_3=""
 
 # Qualcomm
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.qti.va_aosp.support=1 \
 ro.vendor.qti.va_odm.support=1
 
 # Radio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 DEVICE_PROVISIONED=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
@@ -178,20 +178,20 @@ service.qti.ims.enabled=1 \
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
 # SurfaceFlinger
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_virtual_display_dimension=4096
 
 # Time Services
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.delta_time.enable=true
 
 # Tcp
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 net.tcp.2g_init_rwnd=10
 
 # Usb
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.usb.config.extra=none
 
 # USB debugging
@@ -202,11 +202,11 @@ ro.secure=0 \
 ro.debuggable=1
 
 # Wifi
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 wifi.interface=wlan0
 
 # Wifi-Display
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
 persist.sys.wfd.virtual=0
 
 # Dirac algo tsx 9/12
