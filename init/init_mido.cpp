@@ -28,6 +28,8 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <sys/sysinfo.h>
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -37,7 +39,9 @@ char const *heaptargetutilization;
 char const *heapminfree;
 char const *heapmaxfree;
 
-using android::init::property_set;
+int property_set(const char *key, const char *value) {
+    return __system_property_set(key, value);
+}
 
 void check_device()
 {
