@@ -33,7 +33,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/msm8996
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -414,3 +415,12 @@ PRODUCT_PACKAGES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+# Hardware
+PRODUCT_BOARD_PLATFORM := msm8996
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
